@@ -33,7 +33,6 @@ h1 { font-size: 1.6em; }
 
 #the_page {
   width: 85%;
-  min-width: 960px;
   margin: 0 auto;
   padding: 0;
 }
@@ -290,8 +289,7 @@ form {
 #imageInfoBar {
   float: right;
   clear: right;
-  width: 180px;
-  margin: 0 10px;
+  width: 25%;
 }
 
 #randomButtons ul {
@@ -308,9 +306,12 @@ form {
 }
 
 #theImage {
+  float: left;
+  width: 75%;
   text-align: center;
   padding: 1em 0 2em;
   margin: auto;
+  overflow: hidden;
 }
 
 #rateForm {
@@ -434,3 +435,37 @@ ul.actions {
 /* PWG stuff */
 
 .personal_block { padding: 0 !important; }
+
+
+/*  */
+
+@media only screen and (max-width: 957px) {
+  #the_page {
+    width: 100%;
+    margin: 0;
+  }
+
+  #thePicturePage #content {
+    position: relative;
+  }
+
+  #theHeader { margin: 0 1em; }
+  .titrePage { margin: 1em; }
+
+  #theImage {
+    width: 100%;
+    float: none;
+  }
+
+  #imageInfoBar {
+    float: none;
+    clear: both;
+    width: 100%;
+    margin: 0 10px;
+  }
+  #navThumbPrev, #navThumbNext {
+    float: left;
+    margin: 1em;
+  }
+}
+

@@ -1,5 +1,0 @@
-repo: ad69c371136d0c4e387cc14fa610d6cbde0fb0e5
-node: b69b7514684b64cff02057f5be00a8f42887dde6
-branch: Simple_Grey
-latesttag: 2.1
-latesttagdistance: 1

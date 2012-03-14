@@ -23,6 +23,12 @@ h1 { font-size: 1.6em; }
   cursor: pointer;
 }
 
+/* hide javascript stuff */
+
+.js #menubar, .js #theComments > div {
+  display: none;
+}
+
 /* Layout */
 
 #the_page {
@@ -49,6 +55,9 @@ h1 { font-size: 1.6em; }
   margin: 1em 0;
   padding: 0;
   display: inline;
+}
+#subcontent h2 {
+  margin: 0 0 1em;
 }
 
 .titrePage .button {
@@ -149,7 +158,6 @@ form {
   padding: 0;
   float: left;
   width: 15%;
-  display: none;
 }
 
 #menubar ul {
@@ -346,10 +354,6 @@ form {
   cursor: pointer;
 }
 
-#theComments > div {
-  display: none;
-}
-
 #commentAdd, #commentList {
   width: 48%;
   padding: 1%;
@@ -391,6 +395,29 @@ ul.actions {
 #theCommentsPage #comments li {
   clear: left;
   list-style: none;
+}
+
+/* calendar */
+
+.calendarViews, .calendarCalBar {
+  margin: 1em 0;
+}
+
+.calCalHead {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.calMonth {
+  width: 80%;
+  margin: 1em auto;
+}
+
+.calendarBar {
+  text-align: center;
+}
+.calendarBar span {
+  margin: 0 0.5em;
 }
 
 /* Footer */

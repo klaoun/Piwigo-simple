@@ -1,11 +1,8 @@
-<div class="titrePage">
-  <ul class="categoryActions">
-    <li><a href="{$U_HOME}" title="{'Home'|@translate}">{'Home'|@translate}</a></li>
-  </ul>
-  <h2>{'Identification'|@translate}</h2>
-</div>
+{assign var='pagetitle' value='Identification'}
+{include file='pagetitle.tpl'}
+
 <div id="content">
-{if isset($MENUBAR)}{$MENUBAR}{/if}
+  {if isset($MENUBAR)}{$MENUBAR}{/if}
   {if isset($errors) }
   <div class="errors">
     <ul>
@@ -52,7 +49,10 @@
       <a href="{$U_LOST_PASSWORD}" title="{'Forgot your password?'|@translate}">{'Forgot your password?'|@translate}</a>
     </p>
   </form>
-<script type="text/javascript"><!--
+  <script type="text/javascript">
+    <!--
        document.login_form.username.focus();
-//--></script>
+    //-->
+  </script>
+  <div style="clear: both;"></div>
 </div> <!-- content -->

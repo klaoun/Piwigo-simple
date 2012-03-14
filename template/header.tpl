@@ -5,7 +5,7 @@
   <meta name="generator" content="Piwigo (aka PWG), see piwigo.org">
 {if isset($meta_ref) }
   {if isset($INFO_AUTHOR)}
-  <meta name="author" content="{$INFO_AUTHOR|@replace:'"':' '}">
+  <meta name="author" content="{$INFO_AUTHOR|@strip_tags:false|@replace:'"':' '}">
   {/if}
   {if isset($related_tags)}
   <meta name="keywords" content="{foreach from=$related_tags item=tag name=tag_loop}{if !$smarty.foreach.tag_loop.first}, {/if}{$tag.name}{/foreach}">
@@ -53,8 +53,13 @@
   <link rel="alternate" type="application/rss+xml" title="{'Image only RSS feed'|@translate}" href="{$U_FEED_IMAGE_ONLY}">
   <link rel="alternate" type="application/rss+xml" title="{'Complete RSS feed (images, comments)'|@translate}" href="{$U_FEED}">
   {/if}
+
   {get_combined_scripts load='header'}
-  {combine_script id="simplescripts" require="jquery" path="themes/simple/js/scripts.min.js"}
+  {combine_script id='jquery' path='themes/default/js/jquery.min.js'}
+  {combine_script id='jquery.cookie' path='themes/simple/js/jquery.cookie.min.js'}
+  {combine_script id='rating' path='themes/default/js/rating.js'}
+  {combine_script id='core.scripts' path='themes/default/js/scripts.js'}
+  {combine_script id='simple.scripts' path='themes/simple/js/scripts.js'}
 
   {if not empty($head_elements)}
     {foreach from=$head_elements item=elt}{$elt}

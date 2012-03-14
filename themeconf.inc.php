@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: Simple Grey
-Version: 2.5.5
+Version: auto
 Description: Simple Grey
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=308
 Author: Saïmon

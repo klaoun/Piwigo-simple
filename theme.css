@@ -1,0 +1,169 @@
+/* Grey theme for the simple template
+   author: Saïmon <contact at saimon.org> */
+
+body {
+  background-color: #333;
+  color: #999;
+}
+
+#content {
+  background-color: #3F3F3F;
+  border: 2px #606060 solid;
+  border-width: 2px 0;
+}
+
+.totalImages {
+  font-style: italic;
+  margin-top: 0;
+}
+
+a {
+  color: #999;
+}
+
+.titrePage, .titrePage a {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-variant: normal;
+}
+
+h2, h3 {
+  font-variant: small-caps;
+}
+
+#copyright {
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+/* page content :  thumbnails */
+
+#thumbnails {
+  font-weight: bold;
+}
+.thumbnail {
+  border: 2px #707070 solid;
+}
+.thumbnail:hover {
+  border: 2px #f0f0f0 solid;
+}
+#thumbnails p {
+  margin: 0;
+}
+
+#menubar dt {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+/* page content :  categories thumbnails */
+
+.illustration img {
+  border: 1px #606060 solid;
+}
+
+.illustration img:hover {
+  border: 1px #f0f0f0 solid;
+}
+
+.thumbCatDesc {
+  border-top: 1px #606060 dotted;
+  text-align: justify;
+}
+
+.pageNumberSelected {
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+
+.navigationBar a {
+  border-bottom: 1px dotted;
+}
+
+/* inputs */
+
+input[type="text"], input[type="password"], select, textarea, file {
+ background:#f0f0f0;
+ color: #333;
+ border: 1px solid;
+ margin: 0;
+}
+
+fieldset {
+  border: 1px #606060 dotted;
+  margin: 0 0 1em;
+  padding: 1em;
+}
+
+fieldset legend {
+  background-color: #333;
+  padding: 0 3px;
+}
+
+/* picture page */
+
+.imageNumber {
+  border: 1px #999 solid;
+}
+
+#theImage img {
+  border: 8px #fff solid;
+}
+#theImage p {
+  margin: 1em;
+}
+
+#navThumbPrev img, #navThumbNext img {
+  border: 2px #606060 solid;
+}
+#navThumbPrev img:hover, #navThumbNext img:hover {
+  border: 2px #f0f0f0 solid;
+}
+
+/* Comments */
+
+#theComments h3 {
+  border-top: 2px solid #606060;
+}
+
+.commentList .author, .commentList .date {
+  font-weight: bold;
+}
+
+/* tags */
+
+#fullTagCloud a:hover {
+  background: #606060;
+}
+
+#menuTagCloud span {
+  margin: 0;
+}
+
+.nbEntries {
+  text-align: right;
+}
+
+.mandatorystar {
+  color: #e04040;
+}
+
+/* help */
+
+.errors {
+  border: 2px solid #A04040;
+  color: #A04040;
+}
+.errors a {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.infos {
+  border: 2px solid #40A040;
+  color: #40A040;
+}
+.infos a {
+  color: #00FF00;
+  font-weight: bold;
+}

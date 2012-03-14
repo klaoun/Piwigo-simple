@@ -1,8 +1,8 @@
 <?php
 /*
 Theme Name: Simple Grey
-Version: 2.0
-Description: Simple Grey theme
+Version: 2.3
+Description: Simple Grey
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=308
 Author: Saïmon
 Author URI: http://saimon.org/
@@ -22,5 +22,8 @@ $themeconf = array(
 );
 
 global $user;
-$user['maxwidth'] = 680;
+$user['maxwidth'] = 720;
+
+load_language('theme.lang', PHPWG_THEMES_PATH.'simple/');
+
 ?>

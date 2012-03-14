@@ -33,7 +33,7 @@ h1 { font-size: 1.6em; }
 
 #the_page {
   width: 85%;
-  min-width: 900px;
+  min-width: 960px;
   margin: 0 auto;
   padding: 0;
 }
@@ -122,7 +122,7 @@ h1 { font-size: 1.6em; }
 .errors, .infos {
   color: #e04040;
   border: 1px dashed;
-  margin: 0 1em;
+  margin: 1em;
 }
 
 /* Forms */
@@ -291,8 +291,8 @@ form {
 #imageInfoBar {
   float: right;
   clear: right;
-  width: 20%;
-  margin: 0 1em 0;
+  width: 180px;
+  margin: 0 10px;
 }
 
 #randomButtons ul {
@@ -310,7 +310,7 @@ form {
 
 #theImage {
   text-align: center;
-  padding: 1em 0;
+  padding: 1em 0 2em;
   margin: auto;
 }
 
@@ -395,6 +395,11 @@ ul.actions {
 #theCommentsPage #comments li {
   clear: left;
   list-style: none;
+}
+
+#theCommentsPage form label {
+  display: inline-block;
+  line-height: 25px;
 }
 
 /* calendar */

@@ -9,7 +9,7 @@ You can also find some variants (Sunset, Black, White) in Piwigo extensions.
 Licence
 -------
 
-Copyright(C) 2009, 2010 Saïmon <contact@saimon.org>
+Copyright(C) 2009-2011 Simon C. <contact at saimon dot org>
 
 The "Simple grey"  theme for Piwigo is free software:  you can redistribute it
 and/or  modify  it under  the  terms  of the  GNU  General  Public License  as
@@ -39,10 +39,31 @@ Install
 * for  **Piwigo 2.0.x**,  use  **Simple  1.4.1** :  download  the archive  and
   extract it in ``your-gallery/template/``.
 
+Notes for developpers
+---------------------
+
+* `js/compress.sh` is a script which allows to compress and minify the
+  different javascript files, using `yuicompressor`.
+
 Changelog
 ---------
 
-### version 2.2
+### version 2.3 (07/01/2011)
+
+* if cl_conflit is used, don't add jQuery.noConflict
+* fix the possibility to toggle visibility of image informations
+* show logout link when connected - thanks to gbo
+* update jquery to 1.4.4
+* backport commit from piwigo: r6244, r6430 & r6438
+* add gitignore
+* update javascripts + add script to combine/minify
+* apply r6594 from piwigo's trunk
+* move jquery in the header, using known_script
+* translation for the menu title
+* add 1px icon start_filter.png to avoid loading error with rvtree plugin
+* margin for error & info divs
+
+### version 2.2 (23/09/2010)
 
 * fix the calendar's pages
 * update picture.tpl (download, favorites, metadata, rating)
@@ -51,7 +72,7 @@ Changelog
 * update jquery to 1.4.2
 * remove standard deviation for votes
 
-### version 2.1
+### version 2.1 (16/06/2010)
 
 - bugfix for user's profile - use default `profile_content.tpl`
 - child themes do not need to have `content.css`
@@ -61,14 +82,13 @@ Changelog
 - add quicksearch and style input, textarea, ...
 - add login link in the footer
 
-### version 2.0
+### version 2.0 (31/05/2010)
 
 - adapt the theme for Piwigo 2.1
 - add Readme
 - tweak for plugins adding icons in .titrePage (piwishak, addthis, ...)
 
-TODO
-----
 
-* use known_script : does not work in the footer ... {known_script id="jquery"
-  src=$ROOT_URL|@cat:"themes/simple/js/jquery-1.4.2.min.js"}
+## TODO
+
+- put rss link in header.tpl (when ready)

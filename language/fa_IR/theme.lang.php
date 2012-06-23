@@ -22,4 +22,6 @@
 // +-----------------------------------------------------------------------+
 $lang['Album title and description'] = 'عنوان و توضیحات آلبوم';
 $lang['Show/hide menu'] = 'نمایش/عدم نمایش منو';
+$lang['next to the album thumbnail'] = 'مرحله ی بعدی ایجاد عکس ریزه برای آلبوم';
+$lang['under the album thumbnail'] = 'زیر عکس ریزه ی آلبوم';
 ?>

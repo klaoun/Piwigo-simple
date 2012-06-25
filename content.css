@@ -397,7 +397,9 @@ ul.actions {
 
 #theCommentsPage #comments li {
   list-style: none;
-  display: table-row;
+  border-top: none;
+  /* display: table-row; */
+  min-height:150px;
 }
 
 #theCommentsPage form label {

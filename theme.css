@@ -209,3 +209,37 @@ fieldset li {
   color: #00FF00;
   font-weight: bold;
 }
+
+.commentsList .odd {
+  /*
+  background-color:#4c4c4c;
+  */
+}
+
+.commentElement {
+  padding:5px;
+  border-top: 1px dotted #606060;
+}
+
+#comments .description {
+  border-top: 1px dotted #606060;
+  display: block;
+  padding: 10px 0;
+}
+
+#comments .illustration {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+/* LanguageSwitch */
+#languageSwitchLink .pwg-button-text {display:none;}
+
+#languageSwitchLink .pwg-icon {
+  display: inline-block;
+  height: 26px;
+  overflow: hidden;
+  text-indent: -9999px;
+  vertical-align: bottom;
+  width: 26px;
+}

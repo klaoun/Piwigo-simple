@@ -20,8 +20,8 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
-$lang['Album title and description'] = 'Album titel og beskrivelse';
+$lang['Album title and description'] = 'Albumtitel og beskrivelse';
 $lang['Show/hide menu'] = 'Vis/skjul menu';
-$lang['next to the album thumbnail'] = 'ved siden af album miniaturebillede';
-$lang['under the album thumbnail'] = 'under album miniaturebillede';
+$lang['next to the album thumbnail'] = 'ved siden af albummets miniaturebillede';
+$lang['under the album thumbnail'] = 'under albummets miniaturebillede';
 ?>

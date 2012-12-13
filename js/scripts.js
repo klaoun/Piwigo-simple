@@ -2,8 +2,8 @@
 // jQuery.noConflict();
 
 jQuery(document).ready(function($){
-  $("#theComments h3").click(function () {
-    $("#theComments > div").toggle("slow");
+  jQuery("#comments h3").click(function () {
+    jQuery("#pictureComments").toggle("slow");
   });
 
   $("#menuswitcher").click(function(){

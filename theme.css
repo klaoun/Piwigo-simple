@@ -130,7 +130,6 @@ fieldset li {
 #theImage img {
   border: 8px #fff solid;
   margin: 0 20px;
-  max-width: 90%;
 }
 #theImage p {
   margin: 1em;
@@ -210,6 +209,24 @@ fieldset li {
   font-weight: bold;
 }
 
+#thePicturePage #comments h3 {
+  cursor:pointer;
+}
+
+.commentsList .commentElement {
+  list-style:none;
+  padding:0.5em 0;
+}
+
+#thePicturePage #comments .description {
+  padding:0;
+  border:none;
+}
+
+#theCommentsPage .commentElement .description {
+  border-top:1px dotted #555;
+}
+
 .commentsList .odd {
   /*
   background-color:#4c4c4c;
@@ -219,12 +236,6 @@ fieldset li {
 .commentElement {
   padding:5px;
   border-top: 1px dotted #606060;
-}
-
-#comments .description {
-  border-top: 1px dotted #606060;
-  display: block;
-  padding: 10px 0;
 }
 
 #comments .illustration {
@@ -243,3 +254,755 @@ fieldset li {
   vertical-align: bottom;
   width: 26px;
 }
+
+/*
+ CSS for all pages
+*/
+
+body {
+  font: 75% "Bitstream Vera Sans", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img { border: 0; }
+a { text-decoration: none; }
+hr { border: 1px #999999 solid; }
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+h1 { font-size: 1.6em; }
+
+#menuswitcher {
+  cursor: pointer;
+}
+
+/* hide javascript stuff */
+
+.js #menubar, .js #theComments > div {
+  display: none;
+}
+
+/* Layout */
+
+#the_page {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#theHeader h1 {
+  padding: 1em 0 0;
+}
+#theHeader p {
+  padding: 0;
+  margin: 0;
+}
+
+.titrePage {
+  margin: 1em 0;
+  line-height: 1.5em;
+}
+
+.titrePage h2 {
+  margin: 1em 0;
+  padding: 0;
+  display: inline;
+}
+.subcontent h2 {
+  margin: 0 0 1em;
+}
+
+.titrePage .button {
+  float: none;
+}
+
+.titrePage img {
+  float: left;
+  max-height: 16px;
+  margin: 0 5px;
+}
+
+.titrePage .categoryActions {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: auto;
+}
+
+.categoryActions li {
+  display: inline;
+}
+
+#content {
+  margin: 1em 0 0;
+  padding: 1em;
+}
+
+/* tags */
+
+.tagLevel5 { font-size: 130%; }
+.tagLevel4 { font-size: 120%; }
+.tagLevel3 { font-size: 110%; }
+.tagLevel2 { font-size: 100%; }
+.tagLevel1 { font-size: 90%; }
+
+#fullTagCloud {
+  text-align: center;
+  margin: 1em 2em;
+}
+
+#fullTagCloud span {
+  white-space: nowrap;
+  margin: 0 0.5em;
+}
+
+#fullTagCloud a {
+  padding: 2px;
+}
+
+.tagLetterContent {
+  width: 100%;
+}
+
+.tagSelection li {
+  display:  inline;
+}
+
+/* Messages */
+
+.errors, .infos {
+  color: #e04040;
+  border: 1px dashed;
+  margin: 1em;
+}
+
+/* Forms */
+
+form {
+  margin: 0;
+}
+
+#content form li, .subcontent form li {
+  list-style: none;
+  margin: 0.2em 0;
+}
+
+.property {
+  display: inline-block;
+  width: 180px;
+}
+
+#quicksearch {
+  margin: 1em 0 0;
+}
+#quicksearch p {
+  margin: 0;
+}
+#quicksearch #q {
+  width: 150px;
+}
+
+/* Menubar */
+
+#menubar {
+  margin: 0 2em 0 0;
+  padding: 0;
+  float: left;
+  width: 15%;
+}
+
+#menubar ul {
+  margin: 0;
+  padding: 1em 0 1em 2em;
+}
+#menubar dd {
+  margin: 0;
+  padding: 0;
+}
+
+#menubar ul ul {
+ margin: 0;
+ padding: 0 0 0 1em;
+}
+
+/* images thumbnails */
+
+#thumbnails {
+  width: auto;
+  text-align: center;
+  padding: 1em 0;
+}
+
+#thumbnails ul, .middle_block > ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+#thumbnails li, .middle_block > ul li {
+  margin: 1em;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nb-comments, .nb-hits {
+  font-weight: normal;
+}
+.zero {
+  display: none;
+}
+
+/* categories thumbnails */
+
+.thumbnailCategories {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.thumbnailCategories li {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  margin: 1em;
+  width: 29%;
+  text-align: center;
+}
+
+.illustration {
+}
+
+.description {
+  overflow: auto;
+}
+
+.description h3 {
+  margin: 0;
+}
+
+.thumbCatDescNfoDate, .thumbCatDescNbImg {
+  margin: 0;
+  font-size: 80%;
+}
+
+.thumbCatDesc {
+  margin: 0;
+  padding-top: 4px;
+  word-wrap: break-word;
+}
+
+/* page : title bar */
+
+#additional_info {
+  margin: 1em 5em;
+}
+
+.navigationBar {
+  padding: 0.5em;
+  text-align: right;
+}
+
+/* pictures pages */
+
+#thePicturePage #content {
+  background-color:transparent;
+  border-top:none;
+  margin:none;
+  padding:none;
+}
+
+#thePicturePage #theHeader {
+  display: none;
+}
+#thePicturePage #content {
+  padding: 1em 0 0;
+}
+
+.imageNumber {
+  float: right;
+  padding: 0 3px;
+  font-size: 0.9em;
+}
+
+.navButtons {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#navThumbPrev, #navThumbNext {
+  text-align: center;
+  margin: 1em auto;
+}
+
+#imageToolBar {
+  height: 25px;
+}
+/*
+#imageInfoBar {
+  float: right;
+  clear: right;
+  width: 25%;
+}
+
+#randomButtons ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+#imageInfos dt, #imageMeta dt {
+  font-weight: bold;
+}
+#imageInfos dd, #imageMeta dd {
+  margin-left: 1em;
+  overflow: hidden;
+}
+
+#theImage {
+  float: left;
+  width: 75%;
+  text-align: center;
+  padding: 1em 0 2em;
+  margin: 0 auto;
+  overflow: hidden;
+}
+*/
+#rateForm {
+  margin: 0;
+}
+#rateForm input, #rateForm input:active {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+#rateForm input.rateButtonStarFull  {
+  background:  url('icon/rating-stars.png') no-repeat scroll -16px center;
+  width: 16px;
+}
+#rateForm input.rateButtonStarEmpty {
+  background:  url('icon/rating-stars.png') no-repeat scroll 0 center;
+  width: 16px;
+}
+
+
+/* slideshow */
+
+#slideshow {
+  margin: 1em auto;
+}
+#slideshow .titrePage {
+  width: 600px;
+  margin: 0 auto;
+}
+
+#slideshow .navButtons {
+  display: inline;
+  font-size: 1em;
+  float: right;
+  margin-right: 1em;
+}
+#slideshow #theImage {
+  float: none;
+  width: 100%;
+}
+
+#slideshow #copyright {display:none;}
+#slideshow #content {border:none;}
+
+/* comments */
+
+#theComments h3 {
+  height: 25px;
+  line-height: 25px;
+  padding-left: 1em;
+  cursor: pointer;
+}
+
+#commentAdd, #commentList {
+  width: 48%;
+  padding: 1%;
+}
+#commentAdd  { float: left; }
+#commentList { float: right; }
+
+#commentAdd input[type="text"], #commentAdd textarea {
+  width: 400px;
+}
+
+#commentList ul {
+  list-style: none;
+  padding: 0;
+}
+#commentList li {
+  clear: both;
+  display: block;
+  border-top: 1px dotted #606060;
+  padding: 0.5em 0;
+}
+#commentList li ul {
+  list-style-type: none;
+  padding: 4px;
+}
+
+ul.actions {
+  float: right;
+}
+
+#commentList .author {
+  font-weight: bold;
+  font-variant: small-caps;
+}
+#commentList .date {
+  font-style: italic;
+}
+
+#theCommentsPage #comments li {
+  list-style: none;
+  border-top: none;
+  /* display: table-row; */
+  min-height:150px;
+}
+
+#theCommentsPage form label {
+  display: inline-block;
+  line-height: 25px;
+}
+
+#comments .illustration {
+  width: auto;
+}
+
+/* calendar */
+
+.calendarViews, .calendarCalBar {
+  margin: 1em 0;
+}
+
+.calCalHead {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.calMonth {
+  width: 80%;
+  margin: 1em auto;
+}
+
+.calendarBar {
+  text-align: center;
+}
+.calendarBar span {
+  margin: 0 0.5em;
+}
+
+/* Footer */
+
+#copyright {
+  padding: 2px;
+  clear: both;
+}
+
+/* PWG stuff */
+
+.personal_block { padding: 0 !important; }
+
+
+/*  */
+
+@media only screen and (max-width: 957px) {
+  #the_page {
+    width: 100%;
+    margin: 0;
+  }
+
+  #thePicturePage #content {
+    position: relative;
+  }
+
+  #theHeader { margin: 0 1em; }
+  .titrePage { margin: 1em; }
+
+  #theImage {
+    width: 100%;
+    float: none;
+  }
+
+  #imageInfoBar {
+    float: none;
+    clear: both;
+    width: 100%;
+    margin: 0 10px;
+  }
+  #navThumbPrev, #navThumbNext {
+    float: left;
+    margin: 1em;
+  }
+  .thumbnailCategories li {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .thumbnailCategories li {
+    width: 95%;
+  }
+}
+
+/* (from elegant) picture page */
+
+.contentWithMenu #imageHeaderBar 	{ padding: 0;}
+/*
+#imageHeaderBar 						{ padding: 0 0 0 10px;}
+*/
+#imageHeaderBar 						{ width: auto;}
+#imageHeaderBar h2 					{ font-size: 100%; font-weight: inherit;}
+#imageHeaderBar .browsePath {
+	display:inline-block;
+	float:left;
+	font-size:100%;
+        text-transform:uppercase;
+	line-height:20px;
+	padding: 0;
+	font-weight:bold;
+	margin:0;
+}
+#imageToolBar .imageNumber 			{ display: inline-block; float: right; line-height: 26px; margin: 0 2px 0 0; min-width: 40px; text-align: center;}
+#imageToolBar 						{ margin-top: -38px; margin-bottom: 0; float: right;}
+#thePicturePage .pwg-button 			{ width: 26px;}
+#thePicturePage .actionButtons 		{ margin-right: 26px;}
+
+#theImageAndInfos {
+ background-color:#3f3f3f;
+ padding:15px 0;
+ border-top: 2px solid #606060;
+	display: block;
+	width: 100%;
+	position: relative;
+}
+#theImage {
+	display: inline-block;
+	width: 70%;
+	vertical-align: top;
+	overflow: auto;
+	padding: 10px 0 5px 0;
+text-align:center;
+}
+
+.rateButtonStarFull 					{ background: url('icon/rating-stars.png') no-repeat -16px center; width:16px;}
+.rateButtonStarEmpty 				{ background: url('icon/rating-stars.png') no-repeat 0 center; width:16px;}
+
+
+/* image infos */
+
+#imageInfos {
+	display: inline-block;
+	width: 29.5%;
+	vertical-align: top;
+	padding-top: 0;
+	padding-bottom: 5px;
+	margin: 10px 0 10px 0.5%;
+	word-wrap:break-word;
+}
+
+#imageInfos .navThumbs 				{ width: 260px; height: 130px; margin: auto; padding: 0 5px;}
+#imageInfos .navThumb 				{ position: relative; /* width: 120px; height: 120px; */ margin: 0; overflow: hidden;}
+#imageInfos #linkPrev 				{ float: left;}
+#imageInfos #linkNext				{ float: right;} 
+#imageInfos .thumbHover 				{ position: absolute; width: 100%; height: 100%;}
+#imageInfos .prevThumbHover 			{ background: transparent url(icon/none.png) no-repeat center center;}
+#imageInfos .prevThumbHover:hover 	{ background: transparent url(icon/img_prev.png) no-repeat center center;}
+#imageInfos .nextThumbHover 			{ background: transparent url(icon/none.png) no-repeat center center;}
+#imageInfos .nextThumbHover:hover 	{ background: transparent url(icon/img_next.png) no-repeat center center;}
+
+#imageInfos dl.imageInfoTable		{ display: block; padding: 0 15px; margin: 12px auto;}
+#imageInfos .imageInfo 				{ display: block; line-height: 16px;}
+#imageInfos .imageInfo dt				{ display: block; font-weight: bold; text-align: left; padding: 0;}
+#imageInfos .imageInfo dd			{ display: block; text-align: left; margin: 0 0 5px 20px;}
+#imageInfos h3						{ margin: 20px 0 10px;}
+#imageInfos .navThumbs a img {border:2px solid #606060;}
+#imageInfos .navThumbs a:hover img {border-color:#ccc;}
+
+/* image comments */
+
+#thePicturePage #comments 			{ padding: 2px 5px; background-color:#3f3f3f; border-top:2px solid #606060;}
+#thePicturePage #comments h3 			{ margin: 10px 0;}
+#thePicturePage #comments form 		{ margin: 10px 0;}
+#thePicturePage #comments fieldset		{ margin: 0 1em;}
+
+.commentshidden #pictureComments		{ display: none;}
+.commentContent .comments_toggle 	{ cursor: pointer;}
+
+#commentAdd, #pictureCommentList 	{ width: 48%; padding: 0 1%;}
+#commentAdd  						{ float: left; }
+#pictureCommentList 					{ float: right; }
+
+#commentAdd input[type="text"],
+#commentAdd textarea {
+	width: 95%;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 100%;
+}
+
+#pictureCommentList .commentsOrder	{ float: left; margin-bottom: 5px;}
+#pictureCommentList .navigationBar	{ float: right; margin-bottom: 5px;}
+#pictureComments h4					{ margin: 0;}
+#pictureComments form p				{ margin: 5px 0;}
+#pictureComments form p textarea		{ margin: 10px 0;}
+#pictureComments INPUT				{ margin: 10px;}
+#pictureComments INPUT[type=submit]	{ margin: 0;}
+.commentElement .description 		{ padding: 5px;} 
+
+/* icons */
+.pwg-icon {
+	display: inline-block; /*IE6 does not get this correctly*/
+	text-indent: -9999px; overflow: hidden; background-repeat: no-repeat;
+	width: 26px; height: 26px; background-image: url(s26/outline_808080.png);
+	vertical-align: bottom;
+}
+.pwg-button-text { display:none; }
+
+.pwg-state-disabled .pwg-icon {
+	opacity: .5;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+}
+
+.pwg-button {
+	display: inline-block;
+	vertical-align: top;
+  cursor:pointer;
+}
+
+.pwg-icon-home {background-position: -26px 0}
+.pwg-icon-camera {background-position: -52px 0}
+.pwg-icon-save {background-position: -78px 0}
+.pwg-icon-cloud {background-position: -104px 0}
+.pwg-icon-letters {background-position: -130px 0}
+.pwg-icon-calendar {background-position: -156px 0}
+.pwg-icon-camera-calendar {background-position: -182px 0}
+
+.pwg-icon-arrow-n {background-position: 0 -26px}
+.pwg-icon-arrow-e {background-position: -26px -26px}
+/*.pwg-icon-arrow-s {background-position: -52px -26px}*/
+.pwg-icon-arrow-w {background-position: -78px -26px}
+/*.pwg-icon-arrowstop-n {background-position: -104px -26px}*/
+.pwg-icon-arrowstop-e {background-position: -130px -26px}
+/*.pwg-icon-arrowstop-s {background-position: -156px -26px}*/
+.pwg-icon-arrowstop-w {background-position: -182px -26px}
+
+.pwg-icon-close {background-position: 0 -52px}
+.pwg-icon-category-edit {background-position: -26px -52px}
+.pwg-icon-sort {background-position: -52px -52px}
+.pwg-icon-sizes {background-position: -78px -52px}
+.pwg-icon-category-view-normal {background-position: -156px -52px}
+.pwg-icon-category-view-flat {background-position: -182px -52px}
+
+.pwg-icon-caddie {background-position: 0 -78px}
+.pwg-icon-caddie-add {background-position: -26px -78px}
+.pwg-icon-caddie-del {background-position: -52px -78px}
+.pwg-icon-favorite {background-position: -78px -78px}
+.pwg-icon-favorite-add {background-position: -104px -78px}
+.pwg-icon-favorite-del {background-position: -130px -78px}
+.pwg-icon-filter {background-position: -156px -78px}
+.pwg-icon-filter-del {background-position: -182px -78px}
+
+.pwg-icon-camera-info {background-position: 0 -104px}
+.pwg-icon-representative {background-position: -26px -104px}
+.pwg-icon-edit {background-position: -52px -104px}
+.pwg-icon-register {background-position: -78px -104px}
+.pwg-icon-lost-password {background-position: -104px -104px}
+
+.pwg-icon-slideshow {background-position: 0 -130px}
+.pwg-icon-play {background-position: -26px -130px}
+.pwg-icon-pause {background-position: -52px -130px}
+.pwg-icon-stop {background-position: -78px -130px}
+.pwg-icon-clock-plus {background-position: -104px -130px}
+.pwg-icon-clock-minus {background-position: -130px -130px}
+.pwg-icon-repeat-play {background-position: -156px -130px}
+.pwg-icon-repeat-stop {background-position: -182px -130px}
+
+.pwg-icon-map {background-position: 0 -156px}
+.pwg-icon-globe {background-position: -26px -156px}
+
+.pwg-icon									{ background-image: url(../default/s26/outline_808080.png);}
+A:hover .pwg-icon 							{ background-image: url(../default/s26/outline_ffffff.png);}
+
+/**
+ * Picture
+ */
+#imageHeaderBar {
+	padding-top: 2px;
+	padding-bottom: 2px;
+        margin-bottom:10px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#imageHeaderBar .browsePath {
+	float: left;
+}
+
+#imageToolBar .imageNumber {
+	float: right;
+	margin:0 0 0 10px;
+}
+
+#imageHeaderBar H2 {
+	display: inline;
+	text-align: center;
+	padding: 0;
+}
+
+#imageToolBar {
+	text-align: center;
+	clear: both;
+	margin-bottom: 2px;
+	padding: 0;
+	height: 28px;
+}
+
+#imageToolBar .actionButtons { float: left; }
+#imageToolBar .navigationButtons   { float: right; }
+
+.switchBox {
+	padding: 0.5em 5px;
+	border-radius: 4px;
+	z-index: 100;
+	text-align:left;
+	display: none;
+	position: absolute;
+	left: 0; top: 0; /*left, right set through js*/
+}
+
+.switchBoxTitle {
+  border-bottom:1px solid #ccc;
+  padding-bottom:5px;
+  margin-bottom:5px;
+}
+
+.switchBox {
+  border: none;
+  background-color: #222;
+  color:#aaa;
+  font-size:14px;
+}
+
+.switchBoxTitle {
+  border-bottom: 1px solid #444444;
+}
+
+
+.relSwitchBox {
+	position: relative;
+}
+
+#infoSwitcher {display:none;}
+#pictureComments {display: none;}
+.derivativeSizeDetails {display: none;}

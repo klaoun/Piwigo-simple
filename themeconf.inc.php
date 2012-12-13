@@ -4,7 +4,7 @@ Theme Name: Simple Grey
 Version: auto
 Description: Simple Grey
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=308
-Author: Saïmon
+Author: Saïmon, plg
 Author URI: http://saimon.org/
 */
 

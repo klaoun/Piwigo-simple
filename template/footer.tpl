@@ -3,7 +3,6 @@
     {'Page generated in'|@translate} {$debug.TIME} ({$debug.NB_QUERIES} {'SQL queries in'|@translate} {$debug.SQL_TIME}) -
     {/if}
     {'Powered by'|@translate} <a href="{$PHPWG_URL}">Piwigo</a>
-     - <a href="{$themeconf.url}">{$themeconf.name}</a>
     {if isset($U_LOGIN)}
     - <a href="{$U_LOGIN}" rel="nofollow">{'Login'|@translate}</a>
     {/if}

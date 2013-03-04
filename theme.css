@@ -512,6 +512,10 @@ form {
 
 /* pictures pages */
 
+#thePicturePage #menubar {
+  display:none;
+}
+
 #thePicturePage #content {
   background-color:transparent;
   border-top:none;
@@ -931,8 +935,8 @@ text-align:center;
 .pwg-icon-map {background-position: 0 -156px}
 .pwg-icon-globe {background-position: -26px -156px}
 
-.pwg-icon									{ background-image: url(../default/s26/outline_808080.png);}
-A:hover .pwg-icon 							{ background-image: url(../default/s26/outline_ffffff.png);}
+.pwg-icon									{ background-image: url(icons_sprite.png);}
+A:hover .pwg-icon 							{ background-image: url(icons_sprite-hover.png);}
 
 /**
  * Picture

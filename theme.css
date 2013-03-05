@@ -1010,3 +1010,11 @@ A:hover .pwg-icon 							{ background-image: url(icons_sprite-hover.png);}
 #infoSwitcher {display:none;}
 #pictureComments {display: none;}
 .derivativeSizeDetails {display: none;}
+
+/* Loader gif new in 2.5 */
+.loader {
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}

@@ -63,8 +63,15 @@
     {/if}
 
     {if !empty($CATEGORIES) }{$CATEGORIES}{/if}
+    {if !empty($cats_navbar)}
+      {include file='navigation_bar.tpl'|@get_extent:'navbar' navbar=$cats_navbar}
+    {/if}
+
     {if !empty($THUMBNAILS) }<div id="thumbnails">{$THUMBNAILS}</div>{/if}
-    {if !empty($navbar) }{include file='navigation_bar.tpl'|@get_extent:'navbar'}{/if}
+    {if !empty($thumb_navbar)}
+      {include file='navigation_bar.tpl'|@get_extent:'navbar' navbar=$thumb_navbar}
+    {/if}
+
     {if !empty($PLUGIN_INDEX_CONTENT_END) }{$PLUGIN_INDEX_CONTENT_END}{/if}
   </div> <!-- subContent -->
   {if !empty($PLUGIN_INDEX_CONTENT_AFTER)}{$PLUGIN_INDEX_CONTENT_AFTER}{/if}

@@ -12,39 +12,39 @@
 </div>
 <div id="content">
 {if isset($MENUBAR)}{$MENUBAR}{/if}
-{if isset($tags)}
-  {if $display_mode == 'cloud'}
+
+{if $display_mode == 'cloud' and isset($tags)}
   <div id="fullTagCloud">
     {foreach from=$tags item=tag}
 		<span><a href="{$tag.URL}" class="tagLevel{$tag.level}" title="{$pwg->l10n_dec('%d photo', '%d photos', $tag.counter)}">{$tag.name}</a></span>
     {/foreach}
   </div>
-  {/if}
-  {if $display_mode == 'letters'}
+{/if}
+
+{if $display_mode == 'letters' and isset($letters)}
   <table>
     <tr>
       <td valign="top">
-      {foreach from=$letters item=letter}
+  {foreach from=$letters item=letter}
       <fieldset class="tagLetter">
         <legend class="tagLetterLegend">{$letter.TITLE}</legend>
         <table class="tagLetterContent">
-          {foreach from=$letter.tags item=tag}
+    {foreach from=$letter.tags item=tag}
           <tr class="tagLine">
             <td><a href="{$tag.URL}">{$tag.name}</a></td>
         <td class="nbEntries">{$pwg->l10n_dec('%d photo', '%d photos', $tag.counter)}</td>
           </tr>
-          {/foreach}
+    {/foreach}
         </table>
       </fieldset>
-      {if isset($letter.CHANGE_COLUMN) }
+    {if isset($letter.CHANGE_COLUMN) }
       </td>
       <td valign="top">
-      {/if}
-      {/foreach}
+    {/if}
+  {/foreach}
       </td>
     </tr>
   </table>
-  {/if}
 {/if}
 <div style="clear: both;"></div>
 </div> <!-- content -->

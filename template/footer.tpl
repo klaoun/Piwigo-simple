@@ -3,8 +3,12 @@
     {'Page generated in'|@translate} {$debug.TIME} ({$debug.NB_QUERIES} {'SQL queries in'|@translate} {$debug.SQL_TIME}) -
     {/if}
     {'Powered by'|@translate} <a href="{$PHPWG_URL}">Piwigo</a>
+    {$VERSION}
     {if isset($U_LOGIN)}
     - <a href="{$U_LOGIN}" rel="nofollow">{'Login'|@translate}</a>
+    {/if}
+    {if isset($U_ADMIN)}
+    - <a href="{$U_ADMIN}" title="{'available for administrators only'|@translate}">{'Administration'|@translate}</a>
     {/if}
     {if isset($U_LOGOUT)}
     - <a href="{$U_LOGOUT}">{'Logout'|@translate}</a>

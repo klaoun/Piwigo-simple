@@ -1,7 +1,7 @@
 {if !empty($PLUGIN_INDEX_CONTENT_BEFORE)}{$PLUGIN_INDEX_CONTENT_BEFORE}{/if}
 <div class="titrePage">
   <span id="menuswitcher" title="{'Show/hide menu'|@translate}">{'Menu'|@translate}</span> »
-  {if isset($U_EDIT) or isset($U_SLIDESHOW) or !empty($PLUGIN_INDEX_ACTIONS)}
+  {if isset($U_EDIT) or isset($U_SLIDESHOW) or !empty($PLUGIN_INDEX_ACTIONS) or !empty($PLUGIN_INDEX_BUTTONS)}
   <ul class="categoryActions">
     {if isset($U_EDIT)}
     <li><a href="{$U_EDIT}" title="{'edit album informations'|@translate}">{'edit'|@translate}</a></li>

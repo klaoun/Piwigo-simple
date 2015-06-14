@@ -21,7 +21,6 @@
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
 $lang['Album title and description'] = 'Títol i descripció de l\'àlbum';
-$lang['Show/hide menu'] = 'Mostrar/Ocultar el menú';
+$lang['Show/hide menu'] = 'Mostra/Oculta el menú';
 $lang['next to the album thumbnail'] = 'al costat de la miniatura de l\'àlbum';
 $lang['under the album thumbnail'] = 'sota la miniatura de l\'àlbum';
-?>

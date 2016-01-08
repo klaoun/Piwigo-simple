@@ -511,7 +511,7 @@ form {
 /* pictures pages */
 
 #thePicturePage #menubar {
-  display:none;
+  display:none !important;
 }
 
 #thePicturePage #content {

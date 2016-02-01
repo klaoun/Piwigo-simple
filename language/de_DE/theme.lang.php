@@ -21,7 +21,6 @@
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
 $lang['Album title and description'] = 'Albumtitel und -beschreibung';
-$lang['Show/hide menu'] = 'Zeige/verstecke Menü';
-$lang['next to the album thumbnail'] = 'neben dem Vorschaubild des Albums';
-$lang['under the album thumbnail'] = 'unter dem Vorschaubild des Albums';
-?>
+$lang['Show/hide menu'] = 'Menü anzeigen/ ausblenden';
+$lang['next to the album thumbnail'] = 'Neben dem Vorschaubild des Albums';
+$lang['under the album thumbnail'] = 'Unter dem Vorschaubild des Albums';

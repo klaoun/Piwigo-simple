@@ -22,6 +22,5 @@
 // +-----------------------------------------------------------------------+
 $lang['Album title and description'] = 'Album titel en beschrijving';
 $lang['next to the album thumbnail'] = 'naast het klikplaatje van het album';
-$lang['Show/hide menu'] = 'Toon / Verberg menu';
+$lang['Show/hide menu'] = 'Menu toon / verberg ';
 $lang['under the album thumbnail'] = 'onder het klikplaatje van het album';
-?>

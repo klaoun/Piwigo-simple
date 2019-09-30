@@ -508,6 +508,13 @@ form {
   text-align: right;
 }
 
+.badge {
+  background-color: #3f3f3f;
+  padding: 2px 5px;
+  margin-left: 3px;
+  color: #777;
+}
+
 /* pictures pages */
 
 #thePicturePage #menubar {

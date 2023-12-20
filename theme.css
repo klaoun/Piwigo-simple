@@ -1023,3 +1023,7 @@ A:hover .pwg-icon 							{ background-image: url(icons_sprite-hover.png);}
   right: 0;
   bottom: 0;
 }
+
+.search-in-set-button a::before {
+  margin-right: 10px;
+}
